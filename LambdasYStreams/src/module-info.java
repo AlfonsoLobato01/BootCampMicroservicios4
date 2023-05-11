@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author alobatol
+ *
+ */
+module LambdasYStreams {
+}
