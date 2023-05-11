@@ -18,8 +18,8 @@ public class appController {
 	
 	@GetMapping("/person-list")
 	public String personList(final Model model) {
-		 final Flux<Persona> personList = personService.allPersonas();
-		 model.addAttribute("personlist", personList);
+		 final Flux<Persona> personlist = personService.allPersonas();
+		 model.addAttribute("personlist", personlist);
 		 return "personlist";
 	}
 	

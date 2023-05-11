@@ -14,7 +14,7 @@ public class PersonService {
 		
 		Flux<Persona> personas1 = WebClient.create("http://localhost:8080/personlist-1").get().retrieve().bodyToFlux(Persona.class);
 		Flux<Persona> personas2 = WebClient.create("http://localhost:8080/personlist-2").get().retrieve().bodyToFlux(Persona.class);
-		Flux<Persona> personas3 = WebClient.create("http://localhost:8080/personlist-2").get().retrieve().bodyToFlux(Persona.class);
+		Flux<Persona> personas3 = WebClient.create("http://localhost:8080/personlist-3").get().retrieve().bodyToFlux(Persona.class);
 		Flux<Persona> personas4 = WebClient.create("http://localhost:8080/personlist-4").get().retrieve().bodyToFlux(Persona.class);
 		
 		Flux<Persona> allPersonas = Flux.merge(personas1, personas2, personas3, personas4);

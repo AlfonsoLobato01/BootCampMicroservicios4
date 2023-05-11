@@ -8,9 +8,15 @@ public class Persona {
 	
 	
 	public Persona(String firstname, String lastname, int age) {
+		super();
 		this.firstname = firstname;
 		this.lastname = lastname;
 		this.age = age;
+	}
+
+
+	public Persona() {
+		
 	}
 
 
@@ -42,6 +48,13 @@ public class Persona {
 	public void setAge(int age) {
 		this.age = age;
 	}
+
+
+	@Override
+	public String toString() {
+		return "Persona [firstname=" + firstname + ", lastname=" + lastname + ", age=" + age + "]";
+	}
+	
 	
 	
 	
